@@ -37,4 +37,24 @@
 			<finder-column name="display" />
 		</finder>
 	</entity>
+
+	<!-- Define the entity for the Stand Up Entry table -->
+	<entity name="StandUpEntry" local-service="true" table="StandupEntry">
+		<!-- Primary key column -->
+		<column name="entryId" type="long" primary="true"></column>
+
+		<!-- Foreign key columns -->
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<column name="userId" type="long"></column>
+
+		<!-- Other columns -->
+		<column name="quantity" type="int"></column>
+		<column name="difficulty" type="int"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="blocking" type="String"></column>
+		<column name="additionalDetails" type="String"></column>
+		<column name="status" type="int"></column>
+	</entity>
 </service-builder>
