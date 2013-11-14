@@ -14,7 +14,7 @@
 
 package com.liferay.support.standup.service.base;
 
-import com.liferay.support.standup.service.GlobalInformationServiceUtil;
+import com.liferay.support.standup.service.StandUpEntryServiceUtil;
 
 import java.util.Arrays;
 
@@ -22,8 +22,8 @@ import java.util.Arrays;
  * @author Daniel Javorszky
  * @generated
  */
-public class GlobalInformationServiceClpInvoker {
-	public GlobalInformationServiceClpInvoker() {
+public class StandUpEntryServiceClpInvoker {
+	public StandUpEntryServiceClpInvoker() {
 		_methodName24 = "getBeanIdentifier";
 
 		_methodParameterTypes24 = new String[] {  };
@@ -37,12 +37,12 @@ public class GlobalInformationServiceClpInvoker {
 		Object[] arguments) throws Throwable {
 		if (_methodName24.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes24, parameterTypes)) {
-			return GlobalInformationServiceUtil.getBeanIdentifier();
+			return StandUpEntryServiceUtil.getBeanIdentifier();
 		}
 
 		if (_methodName25.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes25, parameterTypes)) {
-			GlobalInformationServiceUtil.setBeanIdentifier((java.lang.String)arguments[0]);
+			StandUpEntryServiceUtil.setBeanIdentifier((java.lang.String)arguments[0]);
 
 			return null;
 		}

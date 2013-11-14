@@ -8,3 +8,17 @@ create table SUP_GlobalInformation (
 	display INTEGER,
 	status INTEGER
 );
+
+create table StandupEntry (
+	entryId LONG not null primary key,
+	companyId LONG,
+	groupId LONG,
+	userId LONG,
+	quantity INTEGER,
+	difficulty INTEGER,
+	createDate DATE null,
+	modifiedDate DATE null,
+	blocking VARCHAR(75) null,
+	additionalDetails VARCHAR(75) null,
+	status INTEGER
+);

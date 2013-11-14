@@ -4,4 +4,7 @@
 	<bean id="com.liferay.support.standup.service.GlobalInformationLocalService" class="com.liferay.support.standup.service.impl.GlobalInformationLocalServiceImpl" />
 	<bean id="com.liferay.support.standup.service.GlobalInformationService" class="com.liferay.support.standup.service.impl.GlobalInformationServiceImpl" />
 	<bean id="com.liferay.support.standup.service.persistence.GlobalInformationPersistence" class="com.liferay.support.standup.service.persistence.GlobalInformationPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.support.standup.service.StandUpEntryLocalService" class="com.liferay.support.standup.service.impl.StandUpEntryLocalServiceImpl" />
+	<bean id="com.liferay.support.standup.service.StandUpEntryService" class="com.liferay.support.standup.service.impl.StandUpEntryServiceImpl" />
+	<bean id="com.liferay.support.standup.service.persistence.StandUpEntryPersistence" class="com.liferay.support.standup.service.persistence.StandUpEntryPersistenceImpl" parent="basePersistence" />
 </beans>

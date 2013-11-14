@@ -14,7 +14,7 @@
 
 package com.liferay.support.standup.service.base;
 
-import com.liferay.support.standup.service.GlobalInformationLocalServiceUtil;
+import com.liferay.support.standup.service.StandUpEntryLocalServiceUtil;
 
 import java.util.Arrays;
 
@@ -22,26 +22,26 @@ import java.util.Arrays;
  * @author Daniel Javorszky
  * @generated
  */
-public class GlobalInformationLocalServiceClpInvoker {
-	public GlobalInformationLocalServiceClpInvoker() {
-		_methodName0 = "addGlobalInformation";
+public class StandUpEntryLocalServiceClpInvoker {
+	public StandUpEntryLocalServiceClpInvoker() {
+		_methodName0 = "addStandUpEntry";
 
 		_methodParameterTypes0 = new String[] {
-				"com.liferay.support.standup.model.GlobalInformation"
+				"com.liferay.support.standup.model.StandUpEntry"
 			};
 
-		_methodName1 = "createGlobalInformation";
+		_methodName1 = "createStandUpEntry";
 
 		_methodParameterTypes1 = new String[] { "long" };
 
-		_methodName2 = "deleteGlobalInformation";
+		_methodName2 = "deleteStandUpEntry";
 
 		_methodParameterTypes2 = new String[] { "long" };
 
-		_methodName3 = "deleteGlobalInformation";
+		_methodName3 = "deleteStandUpEntry";
 
 		_methodParameterTypes3 = new String[] {
-				"com.liferay.support.standup.model.GlobalInformation"
+				"com.liferay.support.standup.model.StandUpEntry"
 			};
 
 		_methodName4 = "dynamicQuery";
@@ -80,11 +80,11 @@ public class GlobalInformationLocalServiceClpInvoker {
 				"com.liferay.portal.kernel.dao.orm.Projection"
 			};
 
-		_methodName10 = "fetchGlobalInformation";
+		_methodName10 = "fetchStandUpEntry";
 
 		_methodParameterTypes10 = new String[] { "long" };
 
-		_methodName11 = "getGlobalInformation";
+		_methodName11 = "getStandUpEntry";
 
 		_methodParameterTypes11 = new String[] { "long" };
 
@@ -92,18 +92,18 @@ public class GlobalInformationLocalServiceClpInvoker {
 
 		_methodParameterTypes12 = new String[] { "java.io.Serializable" };
 
-		_methodName13 = "getGlobalInformations";
+		_methodName13 = "getStandUpEntries";
 
 		_methodParameterTypes13 = new String[] { "int", "int" };
 
-		_methodName14 = "getGlobalInformationsCount";
+		_methodName14 = "getStandUpEntriesCount";
 
 		_methodParameterTypes14 = new String[] {  };
 
-		_methodName15 = "updateGlobalInformation";
+		_methodName15 = "updateStandUpEntry";
 
 		_methodParameterTypes15 = new String[] {
-				"com.liferay.support.standup.model.GlobalInformation"
+				"com.liferay.support.standup.model.StandUpEntry"
 			};
 
 		_methodName40 = "getBeanIdentifier";
@@ -119,44 +119,44 @@ public class GlobalInformationLocalServiceClpInvoker {
 		Object[] arguments) throws Throwable {
 		if (_methodName0.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes0, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.addGlobalInformation((com.liferay.support.standup.model.GlobalInformation)arguments[0]);
+			return StandUpEntryLocalServiceUtil.addStandUpEntry((com.liferay.support.standup.model.StandUpEntry)arguments[0]);
 		}
 
 		if (_methodName1.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes1, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.createGlobalInformation(((Long)arguments[0]).longValue());
+			return StandUpEntryLocalServiceUtil.createStandUpEntry(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName2.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes2, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.deleteGlobalInformation(((Long)arguments[0]).longValue());
+			return StandUpEntryLocalServiceUtil.deleteStandUpEntry(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName3.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes3, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.deleteGlobalInformation((com.liferay.support.standup.model.GlobalInformation)arguments[0]);
+			return StandUpEntryLocalServiceUtil.deleteStandUpEntry((com.liferay.support.standup.model.StandUpEntry)arguments[0]);
 		}
 
 		if (_methodName4.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes4, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQuery();
+			return StandUpEntryLocalServiceUtil.dynamicQuery();
 		}
 
 		if (_methodName5.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes5, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0]);
+			return StandUpEntryLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0]);
 		}
 
 		if (_methodName6.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes6, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
+			return StandUpEntryLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
 				((Integer)arguments[1]).intValue(),
 				((Integer)arguments[2]).intValue());
 		}
 
 		if (_methodName7.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes7, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
+			return StandUpEntryLocalServiceUtil.dynamicQuery((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
 				((Integer)arguments[1]).intValue(),
 				((Integer)arguments[2]).intValue(),
 				(com.liferay.portal.kernel.util.OrderByComparator)arguments[3]);
@@ -164,54 +164,54 @@ public class GlobalInformationLocalServiceClpInvoker {
 
 		if (_methodName8.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes8, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQueryCount((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0]);
+			return StandUpEntryLocalServiceUtil.dynamicQueryCount((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0]);
 		}
 
 		if (_methodName9.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes9, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.dynamicQueryCount((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
+			return StandUpEntryLocalServiceUtil.dynamicQueryCount((com.liferay.portal.kernel.dao.orm.DynamicQuery)arguments[0],
 				(com.liferay.portal.kernel.dao.orm.Projection)arguments[1]);
 		}
 
 		if (_methodName10.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes10, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.fetchGlobalInformation(((Long)arguments[0]).longValue());
+			return StandUpEntryLocalServiceUtil.fetchStandUpEntry(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName11.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes11, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.getGlobalInformation(((Long)arguments[0]).longValue());
+			return StandUpEntryLocalServiceUtil.getStandUpEntry(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName12.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes12, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.getPersistedModel((java.io.Serializable)arguments[0]);
+			return StandUpEntryLocalServiceUtil.getPersistedModel((java.io.Serializable)arguments[0]);
 		}
 
 		if (_methodName13.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes13, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.getGlobalInformations(((Integer)arguments[0]).intValue(),
+			return StandUpEntryLocalServiceUtil.getStandUpEntries(((Integer)arguments[0]).intValue(),
 				((Integer)arguments[1]).intValue());
 		}
 
 		if (_methodName14.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes14, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.getGlobalInformationsCount();
+			return StandUpEntryLocalServiceUtil.getStandUpEntriesCount();
 		}
 
 		if (_methodName15.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes15, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.updateGlobalInformation((com.liferay.support.standup.model.GlobalInformation)arguments[0]);
+			return StandUpEntryLocalServiceUtil.updateStandUpEntry((com.liferay.support.standup.model.StandUpEntry)arguments[0]);
 		}
 
 		if (_methodName40.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes40, parameterTypes)) {
-			return GlobalInformationLocalServiceUtil.getBeanIdentifier();
+			return StandUpEntryLocalServiceUtil.getBeanIdentifier();
 		}
 
 		if (_methodName41.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes41, parameterTypes)) {
-			GlobalInformationLocalServiceUtil.setBeanIdentifier((java.lang.String)arguments[0]);
+			StandUpEntryLocalServiceUtil.setBeanIdentifier((java.lang.String)arguments[0]);
 
 			return null;
 		}

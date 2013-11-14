@@ -26,8 +26,35 @@
 			<transient name="userUuid" />
 		</attributes>
 	</mapped-superclass>
+	<mapped-superclass class="com.liferay.support.standup.model.impl.StandUpEntryModelImpl">
+		<attributes>
+			<id name="entryId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="userId" />
+			<basic name="quantity" />
+			<basic name="difficulty" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="blocking" />
+			<basic name="additionalDetails" />
+			<basic name="status" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
 	<entity class="com.liferay.support.standup.model.impl.GlobalInformationImpl" name="GlobalInformation">
 		<table name="SUP_GlobalInformation" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.support.standup.model.impl.StandUpEntryImpl" name="StandUpEntry">
+		<table name="StandupEntry" />
 		<attributes />
 	</entity>
 </entity-mappings>

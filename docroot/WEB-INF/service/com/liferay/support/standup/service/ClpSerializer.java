@@ -26,6 +26,7 @@ import com.liferay.portal.kernel.util.Validator;
 import com.liferay.portal.model.BaseModel;
 
 import com.liferay.support.standup.model.GlobalInformationClp;
+import com.liferay.support.standup.model.StandUpEntryClp;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -106,6 +107,10 @@ public class ClpSerializer {
 			return translateInputGlobalInformation(oldModel);
 		}
 
+		if (oldModelClassName.equals(StandUpEntryClp.class.getName())) {
+			return translateInputStandUpEntry(oldModel);
+		}
+
 		return oldModel;
 	}
 
@@ -125,6 +130,16 @@ public class ClpSerializer {
 		GlobalInformationClp oldClpModel = (GlobalInformationClp)oldModel;
 
 		BaseModel<?> newModel = oldClpModel.getGlobalInformationRemoteModel();
+
+		newModel.setModelAttributes(oldClpModel.getModelAttributes());
+
+		return newModel;
+	}
+
+	public static Object translateInputStandUpEntry(BaseModel<?> oldModel) {
+		StandUpEntryClp oldClpModel = (StandUpEntryClp)oldModel;
+
+		BaseModel<?> newModel = oldClpModel.getStandUpEntryRemoteModel();
 
 		newModel.setModelAttributes(oldClpModel.getModelAttributes());
 
@@ -151,6 +166,11 @@ public class ClpSerializer {
 		if (oldModelClassName.equals(
 					"com.liferay.support.standup.model.impl.GlobalInformationImpl")) {
 			return translateOutputGlobalInformation(oldModel);
+		}
+
+		if (oldModelClassName.equals(
+					"com.liferay.support.standup.model.impl.StandUpEntryImpl")) {
+			return translateOutputStandUpEntry(oldModel);
 		}
 
 		return oldModel;
@@ -238,6 +258,11 @@ public class ClpSerializer {
 			return new com.liferay.support.standup.NoSuchGlobalInformationException();
 		}
 
+		if (className.equals(
+					"com.liferay.support.standup.NoSuchStandUpEntryException")) {
+			return new com.liferay.support.standup.NoSuchStandUpEntryException();
+		}
+
 		return throwable;
 	}
 
@@ -247,6 +272,16 @@ public class ClpSerializer {
 		newModel.setModelAttributes(oldModel.getModelAttributes());
 
 		newModel.setGlobalInformationRemoteModel(oldModel);
+
+		return newModel;
+	}
+
+	public static Object translateOutputStandUpEntry(BaseModel<?> oldModel) {
+		StandUpEntryClp newModel = new StandUpEntryClp();
+
+		newModel.setModelAttributes(oldModel.getModelAttributes());
+
+		newModel.setStandUpEntryRemoteModel(oldModel);
 
 		return newModel;
 	}

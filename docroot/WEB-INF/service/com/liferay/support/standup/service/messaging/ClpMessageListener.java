@@ -20,6 +20,8 @@ import com.liferay.portal.kernel.messaging.Message;
 import com.liferay.support.standup.service.ClpSerializer;
 import com.liferay.support.standup.service.GlobalInformationLocalServiceUtil;
 import com.liferay.support.standup.service.GlobalInformationServiceUtil;
+import com.liferay.support.standup.service.StandUpEntryLocalServiceUtil;
+import com.liferay.support.standup.service.StandUpEntryServiceUtil;
 
 /**
  * @author Daniel Javorszky
@@ -39,6 +41,9 @@ public class ClpMessageListener extends BaseMessageListener {
 			GlobalInformationLocalServiceUtil.clearService();
 
 			GlobalInformationServiceUtil.clearService();
+			StandUpEntryLocalServiceUtil.clearService();
+
+			StandUpEntryServiceUtil.clearService();
 		}
 	}
 }
